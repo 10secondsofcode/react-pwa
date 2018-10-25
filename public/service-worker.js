@@ -1,5 +1,5 @@
 var doCache = true;
-
+alert("LEaf ===> "+doCache);
 var CACHE_NAME = "my-pwa-cache-v1";
 
 self.addEventListener("activate", event => {

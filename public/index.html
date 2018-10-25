@@ -75,7 +75,9 @@
       <script>
         if ('serviceWorker' in navigator) {
           window.addEventListener('load', function () {
+            //alert("if loop ==>");
             navigator.serviceWorker.register('service-worker.js').then(function (registration) {
+              //alert("if loop ==>"+registration.scope);
               console.log('ServiceWorker registration successful with scope: ', registration.scope);
             }, function (err) {
               console.log('ServiceWorker registration failed: ', err);
@@ -84,6 +86,7 @@
             });
           });
         } else {
+          alert("elase loop ==>");
           console.log('service worker is not supported');
         }
       </script>
