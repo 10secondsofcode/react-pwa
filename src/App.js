@@ -1,24 +1,16 @@
 import React, { Component } from "react";
-import { BrowserRouter, Route, Link } from "react-router-dom";
-import logo from "./logo.svg";
+import { Route, Link } from "react-router-dom";
+//import logo from "./logo.svg";
 
-import Home from "./components/Home";
-import About from "./components/About";
+import Header from "./components/Header";
+import Router from "./components/Router";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>React App</h2>
-        </div>
-        <BrowserRouter>
-          <div>
-            <Route path="/" exact component={Home} />
-            <Route path="/about" exact component={About} />
-          </div>
-        </BrowserRouter>
+        <Header />
+        <Router />
       </div>
     );
   }

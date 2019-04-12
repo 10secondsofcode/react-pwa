@@ -2,8 +2,9 @@
   "name": "react-pwa",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://10secondsofcode.github.io/react-pwa/",
+  "homepage": "https://10secondsofcode.github.io/react-pwa/",
   "dependencies": {
+    "bootstrap": "^4.3.1",
     "gh-pages": "^2.0.1",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
